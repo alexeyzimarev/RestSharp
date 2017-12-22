@@ -21,7 +21,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Text;
-
 using System.Net.Cache;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
@@ -81,7 +80,7 @@ namespace RestSharp
         RequestCachePolicy CachePolicy { get; set; }
 
 
-		string ConnectionGroupName { get; set; }
+        string ConnectionGroupName { get; set; }
 
         /// <summary>
         /// An alternative to RequestBody, for when the caller already has the byte array.
@@ -133,7 +132,7 @@ namespace RestSharp
         HttpResponse AsGet(string httpMethod);
 
         IWebProxy Proxy { get; set; }
-        
+
         RemoteCertificateValidationCallback RemoteCertificateValidationCallback { get; set; }
     }
 }
